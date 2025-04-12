@@ -11,3 +11,8 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('ckeditor5/', include('django_ckeditor_5.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+admin.site.site_header = "CIF-CG Panel"
+admin.site.index_title = "Administration"
+admin.site.site_title = "CIF-CG Admin"
